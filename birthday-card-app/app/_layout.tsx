@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import { Stack } from 'expo-router';
 import { PaperProvider, MD3LightTheme as DefaultLightTheme, MD3DarkTheme as DefaultDarkTheme } from 'react-native-paper';
@@ -6,6 +7,7 @@ import { useFonts as usePoppins, Poppins_400Regular, Poppins_700Bold } from '@ex
 import { useFonts as useLobster, Lobster_400Regular } from '@expo-google-fonts/lobster';
 import { useFonts as usePacifico, Pacifico_400Regular } from '@expo-google-fonts/pacifico';
 import { StatusBar } from 'expo-status-bar';
+import { EditorProvider } from '../context/EditorContext';
 
 const lightTheme = {
   ...DefaultLightTheme,
@@ -39,13 +41,15 @@ export default function RootLayout() {
   return (
     <PaperProvider theme={scheme === 'dark' ? darkTheme : lightTheme}>
       <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
-      <Stack>
-        <Stack.Screen name="index" options={{ title: 'Birthday Cards' }} />
-        <Stack.Screen name="templates" options={{ title: 'Templates' }} />
-        <Stack.Screen name="editor" options={{ title: 'Editor' }} />
-        <Stack.Screen name="preview" options={{ title: 'Preview' }} />
-        <Stack.Screen name="countdown" options={{ title: 'Countdown' }} />
-      </Stack>
+      <EditorProvider>
+        <Stack>
+          <Stack.Screen name="index" options={{ title: 'Birthday Cards' }} />
+          <Stack.Screen name="templates" options={{ title: 'Templates' }} />
+          <Stack.Screen name="editor" options={{ title: 'Editor' }} />
+          <Stack.Screen name="preview" options={{ title: 'Preview' }} />
+          <Stack.Screen name="countdown" options={{ title: 'Countdown' }} />
+        </Stack>
+      </EditorProvider>
     </PaperProvider>
   );
 }
