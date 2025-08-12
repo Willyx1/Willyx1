@@ -6,11 +6,11 @@ import { useRouter } from 'expo-router';
 import { useEditor } from '../context/EditorContext';
 
 const TEMPLATES = [
-  { id: 'classic', colors: ['#FDE68A', '#F59E0B'], label: 'Classic' },
-  { id: 'modern', colors: ['#8B5CF6', '#06B6D4'], label: 'Modern' },
-  { id: 'cute', colors: ['#FBCFE8', '#F472B6'], label: 'Cute' },
-  { id: 'luxury', colors: ['#0F172A', '#1F2937'], label: 'Luxury' },
-  { id: 'playful', colors: ['#34D399', '#60A5FA'], label: 'Playful' },
+  { id: 'classic', colors: ['#FDE68A', '#F59E0B'] as const, label: 'Classic' },
+  { id: 'modern', colors: ['#8B5CF6', '#06B6D4'] as const, label: 'Modern' },
+  { id: 'cute', colors: ['#FBCFE8', '#F472B6'] as const, label: 'Cute' },
+  { id: 'luxury', colors: ['#0F172A', '#1F2937'] as const, label: 'Luxury' },
+  { id: 'playful', colors: ['#34D399', '#60A5FA'] as const, label: 'Playful' },
 ];
 
 export default function TemplatesScreen() {

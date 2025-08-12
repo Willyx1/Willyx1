@@ -26,14 +26,14 @@ export default function PreviewScreen() {
       const { granted } = await requestPermission();
       if (!granted) return;
     }
-    const uri = await viewShotRef.current?.capture?.({ result: 'tmpfile', fileName: 'birthday-card', format: 'png', quality: 1 });
+    const uri = await viewShotRef.current?.capture?.();
     if (!uri) return;
     await MediaLibrary.saveToLibraryAsync(uri);
     Alert.alert('Saved', 'Your card has been saved to your gallery.');
   };
 
   const onShare = async () => {
-    const uri = await viewShotRef.current?.capture?.({ result: 'tmpfile', fileName: 'birthday-card', format: 'png', quality: 1 });
+    const uri = await viewShotRef.current?.capture?.();
     if (!uri) return;
     if (Platform.OS === 'web') {
       Alert.alert('Share', 'Sharing is not supported on web in this demo.');
