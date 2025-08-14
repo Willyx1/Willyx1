@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" role="img" aria-label="Girl's Dignity Academy Logo">
+	<title>Girl's Dignity Academy</title>
+	<defs>
+		<linearGradient id="book" x1="0" x2="1">
+			<stop offset="0%" stop-color="#F58220"/>
+			<stop offset="50%" stop-color="#00A651"/>
+			<stop offset="100%" stop-color="#0072BB"/>
+		</linearGradient>
+	</defs>
+	<!-- Big G -->
+	<path d="M70,20 a40,40 0 1,0 0,80 h35 v-20 h-25 a20,20 0 1,1 0-40 h30 v25 h20 v-45 z" fill="#E60026"/>
+	<!-- Book shape -->
+	<path d="M110,45 h60 a12,12 0 0 1 12,12 v28 h-72z" fill="url(#book)"/>
+	<!-- Jumping figure -->
+	<circle cx="188" cy="40" r="8" fill="#EC008C"/>
+	<path d="M180,50 q8,10 16,0 l6,36 h-12z" fill="#EC008C"/>
+	<!-- Text -->
+	<text x="10" y="115" font-family="Nunito, sans-serif" font-size="16" fill="#702E5F">Girls' Dignity Academy</text>
+</svg>
