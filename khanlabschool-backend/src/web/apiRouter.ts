@@ -1,0 +1,20 @@
+import { Router } from 'express';
+import { router as authRouter } from './routes/auth.js';
+import { router as pagesRouter } from './routes/pages.js';
+import { router as postsRouter } from './routes/posts.js';
+import { router as eventsRouter } from './routes/events.js';
+import { router as staffRouter } from './routes/staff.js';
+import { router as programsRouter } from './routes/programs.js';
+import { router as formsRouter } from './routes/forms.js';
+import { router as donationsRouter } from './routes/donations.js';
+
+export const router = Router();
+
+router.use('/auth', authRouter);
+router.use('/pages', pagesRouter);
+router.use('/posts', postsRouter);
+router.use('/events', eventsRouter);
+router.use('/staff', staffRouter);
+router.use('/programs', programsRouter);
+router.use('/forms', formsRouter);
+router.use('/donations', donationsRouter);
