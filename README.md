@@ -3,7 +3,7 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Willy+Clif!;" />
 </h1>
 
-<h3 align="center">A passionate software developer from Rwanda RW</h3>
+<h3 align="center">A software Engineer from Rwanda RW</h3>
 
 <br/>
 
@@ -11,7 +11,7 @@
  
  🔭 I’m currently working on **My portfolio**
  
- 🌱 I’m currently learning **MangoDB, Js, React Native**
+ 🌱 I’m currently learning **Claude Code, Js, React Native**
 
 💬 Ask me about **Node.js, ComputerLogics, Python... or anything [here](https://github.com/Willyx1/Willyx1/issues)**
 
@@ -33,16 +33,12 @@
 <br/>
 <div align="center">
     <img src="https://skillicons.dev/icons?i=react,html,css,vscode,github,figma,git,r" />
-    <img src="https://skillicons.dev/icons?i=nodejs,python,javascript,mongodb,c,java,nextjs,mysql" /><br>
+    <img src="https://skillicons.dev/icons?i=nodejs,python,javascript,nextjs" /><br>
 </div>
 
 <br/>
 <hr/>
 
-<div align="center">
-  <h2>🐍 My Contributions 🐍</h2>
-  <br>
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/Willyx1/Willyx1/output/github-contribution-grid-snake.svg" />
   
   <br/><br/><br/>
 </div>
